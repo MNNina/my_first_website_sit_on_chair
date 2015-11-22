@@ -1,68 +1,117 @@
+@font-face {
+    font-family: 'ralewayregular';
+    src: url("../fonts/raleway-regular.eot");
+    src: url("../fonts/raleway-regular.eot?#iefix") format('embedded-opentype'),
+    url("../fonts/raleway-regular.woff2") format("woff2"),
+    url("../fonts/raleway-regular.woff") format("woff"),
+    url("../fonts/raleway-regular.ttf") format("truetype"),
+    url("../fonts/raleway-regular.svg#ralewayregular") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "ralewaybold";
+    src: url("../fonts/raleway-bold.eot");
+    src: url("../fonts/raleway-bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/raleway-bold.woff2") format("woff2"),
+    url("../fonts/raleway-bold.woff") format("woff"),
+    url("../fonts/raleway-bold.ttf") format("truetype"),
+    url("../fonts/raleway-bold.svg#ralewaybold") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "ralewaylight";
+    src: url("../fonts/raleway-light.eot");
+    src: url("../fonts/raleway-light.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/raleway-light.woff2") format("woff2"),
+    url("../fonts/raleway-light.woff") format("woff"),
+    url("../fonts/raleway-light.ttf") format("truetype"),
+    url("../fonts/raleway-light.svg#ralewaylight") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
 body {
+    background: linear-gradient(to bottom, rgba(153,153,153,1) 0%, rgba(179,179,179,1) 3%,
+    rgba(204,204,204,1) 25%, rgba(143,143,143,1) 39%, rgba(36,36,36,1) 99%, rgba(36,36,36,1) 100%);
+
     margin: 0 auto;
     padding:0;
     width:100%;
+    font-family: ralewayregular, arial;
 }
-.title .menu{
-    margin:0;
+
+.width_section{
+    margin:0 auto;
+    width:870px;
+}
+
+header{
     background: #000000;
     color:#FFF;
-    height:25px;
-    font-size: 15px;
+    height:20px;
+    font-family:ralewaybold;
+    font-size: 10px;
+    margin:0;
     padding-top:5px;
     position:relative;
+    width:100%;
 }
-.title .menu ul li{
-    list-style-type: none;
-    color:white;
-    width:60px;
-    height:25px;
-    display:inline;
-    margin: 3px 30px 0 20px;
-    text-transform:uppercase;
+.span1{
+    color:#26c7a9;
 }
-.title span{
-    margin-to:5px;
-    margin-left:30px;
-    text-transform: uppercase;
-}
-.title .menu ul{
+.width_section .menu ul{
     padding:0;
     margin:0;
     float:right;
 }
-.sit_on {
-    background: linear-gradient(to bottom, rgba(153,153,153,1) 0%, rgba(179,179,179,1) 3%,
-    rgba(204,204,204,1) 25%, rgba(143,143,143,1) 39%, rgba(36,36,36,1) 99%, rgba(36,36,36,1) 100%);
+.width_section .menu ul li{
+    list-style-type: none;
+    color:white;
+    width:60px;
+    height:20px;
+    display:inline;
+    margin: 0 30px 0 20px;
+    text-transform:uppercase;
+}
+.width_section span{
+    text-transform: uppercase;
+    font-family:ralewaybold;
+}
 
-    border:1px solid pink;
+.sit_on .width_section{
     text-align: center;
     width:100%;
     height:700px;
 }
 
-.sit_on .article{
-    border:1px solid yellow;
+.sit_on .width_section .article{
     display:inline-block;
 }
 
 .sit_on .article img{
     float:left;
     margin:0;
+    width:465px;
+    height:400px;
 }
 .sit_on .art_1{
     width: 400px;
     height: 400px;
+    margin-top: 40px;
+    padding-right: 25px;
     float:right;
+    text-align: center;
 }
 .sit_on .art_1 h1{
     text-transform: uppercase;
     font-size:40px;
+    text-align: left;
 }
 
 .sit_on button{
     margin-top:20px;
-    background:#19A56F;
+    background:#26c7a9;
     padding:5px;
     width:200px;
     height:50px;
@@ -71,115 +120,160 @@ body {
     text-transform: uppercase;
 }
 .sit_on .img_text{
-    border:1px solid red;
+    padding-top: 35px;
     display:inline-block;
-    background:white;
+    background:#FFFFFF;
     width:870px;
     height:300px;
 
 }
+.sit_on .box{
+    display:inline-block;
+    float:left;
+    margin:10px;
+}
 .sit_on .box1{
-    float:left;
-    margin:10px;
     width:200px;
     height:200px;
 }
-
 .sit_on .box2{
-    float:left;
     width:200px;
     height:200px;
-    margin:10px;
 }
-.sit_on .img_text .text_1{
+.sit_on .img_text .text_2{
     float:left;
-    text-align:left;
-    margin-left:10px;
+    font-family:ralewayregular;
+    font-size:15px;
+    margin-top:10px;
+    padding:15px;
     width:400px;
     height:200px;
-    border:1px solid gray;
-
+    box-shadow:0px 0px 5px 0 #000000;
+    text-align:left;
 }
-.sit_on .img_text hr{
-    width:200px;
-    height:5px;
-    background:#19A56F;
-    float:left;
+.sit_on .img_text h3{
+    font-family:ralewaybold;
+    font-size: 19px;
+    margin:0;
     padding:0;
 }
-
-.price_list{
+.sit_on .img_text .hr3{
+    width:150px;
+    height:4px;
+    background:#26c7a9;
+    float:left;
+    padding:0;
+    margin:0;
+    overflow: hidden;
+}
+.price_list .width_section{
+    margin-top: 200px;
+    border:1px solid green;
+    display:inline-block;
+    text-align: center;
     width:100%;
     height:500px;
-    border:1px solid green;
-    background: gray;
-    display:inline-block;
 }
-
-.price_list .table {
-    margin: 0 auto;
-    text-align: center;
+.price_list h2{
+    font-family: ralewaybold;
+    font-size: 25px;
+    text-transform: uppercase;
 }
-
-.price_list .table ul{
+.price_list .plan ul{
     border:1px solid pink;
     list-style-type: none;
 }
-
-.price_list .basic{
+.price_list .plan .circle {
+    border-radius:50%;
+    border:2px solid #000000;
+    box-sizing: border-box;
     display: inline-block;
-    vertical-align: top;
-    border:1px solid blue;
-    width:200px;
-    height:400px;
+    height:50px;
+    position: absolute;
+    margin-left:75px;
+    margin-top: -25px;
+    text-align: center;
+    width:50px;
 }
-.price_list .standard{
+
+.price_list .plan .circle2 {
+    border-radius:50%;
+    width:25px;
+    height:25px;
+    background:#000000;
+    border:2px solid #000000;
+    display:inline-block;
+    line-height:100px;
+    margin-top: 7px;
+    text-align: center;
+}
+.price_list .plan .basic{
+    box-shadow:0px 0px 5px 0 #000000;
+    display: inline-block;
+    line-height: 40px;
+    height:400px;
+    position: relative;
+    width:200px;
+}
+.price_list .plan .standard{
+    background:#26c7a9;
     display: inline-block;
     vertical-align: top;
     border:1px solid red;
     width:200px;
     height:400px;
+    position:relative;
 }
-.price_list .advance{
+.price_list .plan .advance{
     display: inline-block;
     vertical-align: top;
     border:1px solid orange;
     width:200px;
     height:400px;
+    position:relative;
+    box-shadow:0px 0px 5px 0 #000000;
+
 }
 .price_list h3{
     color:#000000;
     text-transform: uppercase;
 }
-.price_list .table .hr4{
+.price_list .plan .hr4{
     width:150px;
     height: 5px;
-    background:#19A56F;
+    background:#26c7a9;
     float:left;
 }
-footer{
-    width:100%;
-    height:500px;
-    background:#ffee6a;
-    margin: 0 auto;
-}
-footer .box_last{
-    width:870px;
-    border:1px solid red;
+.contact .width_section{
+    border:1px solid green;
+    background: #FFFFFF;
     display:inline-block;
+    text-align: center;
+    width:100%;
+    height:400px;
 }
-footer .data{
+.contact .width_section .plan_1{
+    text-align: center;
+    width:870px;
+    height:400px;
+    border:1px solid violet;
+    display:inline-block;
+    top: 10px;
+}
+.contact .data{
     width:400px;
     border:1px solid red;
     display:block;
+    float:left;
+    text-align: left;
 }
-footer input[type=text]{
+.contact input[type=text]{
     margin:15px;
 }
-footer input[type=email]{
+.contact input[type=email]{
     margin:15px;
 }
-footer textarea{
+.contact textarea{
     padding:0;
     margin:15px;
     width:300px;
@@ -187,13 +281,36 @@ footer textarea{
     resize:none;
 
 }
-footer .red_chair{
-    float:right;
-    border:1px solid green;
+.contact .plan_1 .red_chair{
+    width:400px;
+    border:1px solid red;
+    display:inline-block;
+    float:left;
 }
 
-footer .alr{
-    margin-left:15px;
-    vertical-align: bottom;
+footer .width_section .link1{
+    border:1px solid green;
+    background: #FFFFFF;
+    display:inline-block;
+    width:100%;
+    height:50px;
+}
+footer .link1 p{
     float:left;
+    display:inline-block;
+}
+footer .link{
+    width: 400px;
+    display: inline-block;
+    float:right;
+}
+footer .width_section .link{
+    display: inline-block;
+    float:right;
+}
+
+
+
+.contact .red_chair .checkbox{
+
 }
